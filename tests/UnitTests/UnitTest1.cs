@@ -14,8 +14,19 @@ namespace UnitTests
             Assert.Equal(expected,actual);
 
         }
+
+        [Fact]
+
+        public void SquareRootOfANumber()
+        {
+            var expected = 49;
+            var a = 7;
+            var actual = SquareRoot(a);
+            Assert.Equal(expected, actual);
+
+        }
        
- [Theory]
+        [Theory]
         [InlineData(2,2)]
         [InlineData(120, 5)]
         [InlineData(1, 0)]
@@ -23,7 +34,16 @@ namespace UnitTests
         {
             Assert.Equal(exp, Factorial(n1));
         }
-        
+
+        [Theory]
+        [InlineData(4, 2)]
+        [InlineData(25, 5)]
+        [InlineData(100, 10)]
+        public void SquareRoot_WorksWithManyInputs(int exp, int n1)
+        {
+            Assert.Equal(exp,SquareRoot(n1));
+        }
+
         int Factorial(int x)
         {
            if (x == 0) 
@@ -35,5 +55,10 @@ namespace UnitTests
                 }
 
                 }
+
+        int SquareRoot(int x)
+        {
+            return x * x;
+        }
     }
 }

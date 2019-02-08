@@ -16,7 +16,7 @@ namespace Web.Controllers
         }
         public IActionResult ShowJSON()
         {
-            return Json(new { name = "new Question", quote = "This is my first Quiz." });
+            return Json(new { name = "new Question", quiz = "This is my first Quiz." });
         }
         public IActionResult ShowHTML()
         {

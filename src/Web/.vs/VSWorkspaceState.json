@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\tests"
+    "\\Views",
+    "\\Views\\Shared",
+    "\\wwwroot"
   ],
-  "SelectedNode": "\\Quiz.sln",
   "PreviewInSolutionExplorer": false
 }
