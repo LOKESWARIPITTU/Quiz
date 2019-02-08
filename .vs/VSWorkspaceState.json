@@ -1,0 +1,19 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\Web",
+    "\\src\\Web\\bin",
+    "\\src\\Web\\Models",
+    "\\src\\Web\\obj",
+    "\\src\\Web\\obj\\Debug",
+    "\\src\\Web\\Views",
+    "\\src\\Web\\Views\\Home",
+    "\\src\\Web\\Views\\Quiz",
+    "\\src\\Web\\Views\\Shared",
+    "\\tests",
+    "\\tests\\UnitTests"
+  ],
+  "SelectedNode": "\\Quiz.sln",
+  "PreviewInSolutionExplorer": false
+}
