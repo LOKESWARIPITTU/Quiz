@@ -19,8 +19,8 @@ namespace UnitTests
 
         public void SquareRootOfANumber()
         {
-            var expected = 49;
-            var a = 7;
+            var expected = 7;
+            var a = 49;
             var actual = SquareRoot(a);
             Assert.Equal(expected, actual);
 
@@ -36,9 +36,9 @@ namespace UnitTests
         }
 
         [Theory]
-        [InlineData(4, 2)]
-        [InlineData(25, 5)]
-        [InlineData(100, 10)]
+        [InlineData(2, 4)]
+        [InlineData(5, 25)]
+        [InlineData(10, 100)]
         public void SquareRoot_WorksWithManyInputs(int exp, int n1)
         {
             Assert.Equal(exp,SquareRoot(n1));
@@ -56,9 +56,9 @@ namespace UnitTests
 
                 }
 
-        int SquareRoot(int x)
+        double SquareRoot(int x)
         {
-            return x * x;
+            return  Math.Sqrt(x);
         }
     }
 }
